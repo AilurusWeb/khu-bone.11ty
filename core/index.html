@@ -1,0 +1,15 @@
+---
+layout: layouts/default.liquid
+title: Giffleball del vastaria
+images:
+  - logo.png
+  - logo.png
+  - logo.png
+---
+
+<h1>{{ title }}</h1>
+<ul>
+  {% for filename in images %}
+    <li><a href="img/{{ filename }}">{{ filename }}</a></li>
+  {% endfor %}
+</ul>
