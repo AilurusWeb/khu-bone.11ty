@@ -1,14 +1,21 @@
 const CleanCSS = require("clean-css");
+const safeLinks = require('@sardine/eleventy-plugin-external-links');
+
+const root = './core/';
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addWatchTarget("./styles/");
-  eleventyConfig.addPassthroughCopy("./styles/");
 
-  eleventyConfig.addFilter("cssmin", function(code) {
-    return new CleanCSS({}).minify(code).styles;
+  // Layout
+  eleventyConfig.addLayoutAlias('default', 'layouts/default.liquid');
+
+  // Create Collections
+  eleventyConfig.addCollection("plays", function(collectionApi) {
+      return collectionApi.getFilteredByGlob(root + "plays/*.md");
   });
 
-  
+  // Links
+  eleventyConfig.addPlugin(safeLinks);
+
   eleventyConfig.addFilter("linkActive", function(itemUrl, pageUrl) {
     let response = '';
 
@@ -23,6 +30,15 @@ module.exports = function (eleventyConfig) {
     return response;
   });
 
+  // Styles
+  eleventyConfig.addWatchTarget("./styles/");
+  eleventyConfig.addPassthroughCopy("./styles/");
+
+  eleventyConfig.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
+
+  // Run
   return {
     dir: {
       input: "core",

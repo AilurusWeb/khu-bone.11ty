@@ -11,6 +11,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@ltd/j-toml": "^1.29.0",
     "clean-css": "^5.2.4"
+  },
+  "dependencies": {
+    "@sardine/eleventy-plugin-external-links": "^1.4.0"
   }
 }

@@ -1,0 +1,22 @@
+---
+title: Cartes d'apprentissage en Espagnol
+layout: layouts/default.liquid
+tags: spanish
+---
+
+<h1>{{ title }}</h1>
+
+<div>
+    {% for cat in spanish %}
+        <h3>Categorie : {{ cat[0] }}</h3>
+
+        <section class="listCard">
+            {% for word in cat[1] %}
+                <div class="card card--word">
+                    <div>{{ word.fr }}</div>
+                    <div>{{ word.es }}</div>
+                </div>
+            {%- endfor -%}
+        </section>
+    {%- endfor -%}
+</div>

@@ -1,0 +1,15 @@
+---
+title: Mes parties de jeu de rôle
+layout: default
+---
+
+<h1>{{ title }}</h1>
+
+<div>
+    {% for play in collections.plays %}
+        <div>
+            <h4>{{ play.data.title }}</h4>
+            <a href="{{ play.url }}" title="">Lire l'aventure</a>
+        </div>
+    {%- endfor -%}
+</div>

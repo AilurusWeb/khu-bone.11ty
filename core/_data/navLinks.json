@@ -4,16 +4,20 @@
         "url": "/"
     },
     {
-        "text": "About",
-        "url": "/about-us/"
-    },
-    {
         "text": "Favoris",
         "url": "/bookmarks/"
     },
     {
+        "text": "Espagnol",
+        "url": "/spanish/"
+    },
+    {
         "text": "Blog",
         "url": "/blog/"
+    },
+    {
+        "text": "About",
+        "url": "/about-us/"
     },
     {
         "text": "Contact",
