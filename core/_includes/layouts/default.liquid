@@ -9,14 +9,18 @@ title: My Rad Blog
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
-    <!-- Critical CSS -->
     {% capture css %}{% include "../css/default.css" %}{% endcapture %}
-    <style>{{ css }}</style>
+    <style>{{ css | cssmin }}</style>
   </head>
   <body>
     <div class="website">
       <header class="l-header">
-
+        <nav>
+          <a href="" title="">Khü Bone</a>
+          <a href="" title="">Khü Bone</a>
+          <a href="" title="">Khü Bone</a>
+          <a href="" title="">Khü Bone</a>
+        </nav>
       </header>
       <main class="l-main">{{ content }}</main>
       <footer class="l-footer">
