@@ -1,0 +1,11 @@
+<nav>
+    {% for item in navLinks %}
+        <a 
+            href="{{ item.url }}" 
+            title="{{ item.text }}"
+            {{ item.url | linkActive: page.url }} 
+        >
+            {{ item.text }}
+        </a>
+    {% endfor %}
+</nav>

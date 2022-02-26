@@ -1,0 +1,22 @@
+[
+    {
+        "text": "Home",
+        "url": "/"
+    },
+    {
+        "text": "About",
+        "url": "/about-us/"
+    },
+    {
+        "text": "Favoris",
+        "url": "/bookmarks/"
+    },
+    {
+        "text": "Blog",
+        "url": "/blog/"
+    },
+    {
+        "text": "Contact",
+        "url": "/contact/"
+    }
+]
