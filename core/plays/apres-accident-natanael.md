@@ -1,6 +1,8 @@
 ---
 title: Après l'accident d'avion
 layout: default
+excerpt: Dix heures de vol, dix heures d'excitation, de stresse et de fatigue intenses.
+cover: ./core/img/avatar-001.jpg
 ---
 
 # Après l'accident - Natanael

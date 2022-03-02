@@ -2,89 +2,78 @@
 	{
 		"name": "myNoise",
         "title": "Créer tes propres pistes audio lo-fi",
+        "description": "",
         "url": "https://mynoise.net/",
         "url_title": "Accéder à mynoise.net",
-        "categories": [
-            {
-                "slug": "musique",
-                "name": "musique"
-            }
-        ]
+        "category": {
+            "title": "générateur",
+            "slug": "generator"
+        }
 	},
 	{
 		"name": "Azgaar",
         "title": "Générateur de carte de monde fantasy",
+        "description": "",
         "url": "https://azgaar.github.io/Fantasy-Map-Generator/",
         "url_title": "Accéder à Azgaar",
-        "categories": [
-            {
-                "slug": "carte",
-                "name": "carte"
-            }
-        ]
+        "category": {
+            "title": "générateur",
+            "slug": "generator"
+        }
 	},
 	{
-		"name": "Sapper",
-        "title": "Framework JS pour créer des apps/sites web",
-        "url": "https://sapper.svelte.dev/",
-        "url_title": "Accéder à Sapper",
-        "categories": [
-            {
-                "slug": "dev",
-                "name": "dev"
-            }
-        ]
+		"name": "CSS Stats",
+        "title": "Analyseur du CSS",
+        "description": "",
+        "url": "https://cssstats.com/",
+        "url_title": "Accéder à CSS Stats",
+        "category": {
+            "title": "frontend",
+            "slug": "frontend"
+        }
 	},
 	{
 		"name": "Sur la route de chrysopée",
         "title": "<strong>Jeu de rôle épistolaire</strong> pour voyager à deux",
+        "description": "Maitre et élève s'entraident pour atteindre la chrysopée",
         "url": "https://www.rosedesventseditions.com/les-jeux/sur-la-route-de-chrysopee/",
         "url_title": "Accéder au jeu de rôle, Sur la route de chrysopée",
-        "categories": [
-            {
-                "slug": "jeu-de-role",
-                "name": "jeu de rôle"
-            },
-            {
-                "slug": "social",
-                "name": "social"
-            }
-        ]
+        "category": {
+            "title": "jeu de rôle",
+            "slug": "jdr"
+        }
 	},
 	{
 		"name": "Slowly",
-        "title": "Rencontrer et découvrir par la douceur d'une lettre",
+        "title": "Application d'envoi de lettre virtuelle",
+        "description": "Rencontrer et découvrir par la douceur d'une lettre",
         "url": "https://slowly.app/fr/",
         "url_title": "Accéder à la page d'accueil de Slowly",
-        "categories": [
-            {
-                "slug": "application",
-                "name": "application"
-            },
-            {
-                "slug": "social",
-                "name": "social"
-            },
-            {
-                "slug": "epistolaire",
-                "name": "épistolaire"
-            }
-        ]
+        "category": {
+            "title": "application",
+            "slug": "app"
+        }
 	},
 	{
 		"name": "Rpg Awesome",
         "title": "Font et CSS toolkit d'icones de jeux de rôle",
+        "description": "",
         "url": "https://nagoshiashumari.github.io/Rpg-Awesome",
         "url_title": "Accéder à la page d'accueil de Rpg Awesome",
-        "categories": [
-            {
-                "slug": "font",
-                "name": "font"
-            },
-            {
-                "slug": "icone",
-                "name": "icone"
-            }
-        ]
+        "category": {
+            "title": "frontend",
+            "slug": "frontend"
+        }
+	},
+	{
+		"name": "DoesNotTranslate",
+        "title": "Words that don't translate",
+        "description": "",
+        "url": "https://doesnottranslate.com/",
+        "url_title": "Accéder à la page d'accueil de DoesNotTranslate",
+        "category": {
+            "title": "langage",
+            "slug": "langage"
+        }
 	}
 ]

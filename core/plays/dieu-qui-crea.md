@@ -1,6 +1,8 @@
 ---
 title: Au commencement il y avait 
 layout: default
+excerpt: Est-ce que je ne pourrai pas y mettre un peu de folie dans cet ordre.
+cover: ./core/img/avatar-004.jpg
 ---
 
 Au commencement il y avait 

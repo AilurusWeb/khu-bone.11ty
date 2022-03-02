@@ -1,23 +1,37 @@
 ---
 title: Mes Favoris
-layout: layouts/default.liquid
+layout: default
 tags: bookmarks
 ---
-<h1>{{ title }}</h1>
-<ul>
-    {% for bookmark in bookmarks %}
-    <div>
-        <h3 style="text-decoration: underline">{{ bookmark.name }}</h3>
-        <h4>
-            <a href="{{bookmark.url}}" title="{{bookmark.url_title}}">{{ bookmark.name }}</a> - {{ bookmark.title }}
-        </h4>
-        <div>
-            Catégories :
-            {% for cat in bookmark.categories %}
-            <a href="favoris/{{cat.slug}}" title="Appartient à la catégorie {{cat.name}}">{{ cat.name }}</a>{% if
-            forloop.last == true %}<span>, </span>{% endif %}
-            {% endfor %}
-        </div>
+
+{% assign categories = bookmarks | map: "category" | uniq_slug | sort | compact %}
+
+<div class="bg-white py-6 sm:py-8 lg:py-12">
+    <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+      <!-- text - start -->
+      <div class="mb-10 md:mb-16">
+        <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">{{ title }}</h2>
+  
+        <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.</p>
+      </div>
+      <!-- text - end -->
+  
+      <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-8 sm:gap-y-10 items-baseline">
+
+        {% for category in categories %}
+            {% assign bookmarksWithCategory = bookmarks | where: "category.slug", category.slug %}
+
+            <div class="bg-gray-100 rounded-lg relative p-5 pt-8">
+                <span class="h-8 px-4 inline-flex justify-center items-center bg-indigo-500 text-white rounded-md absolute -top-4 left-4">{{ category.title }}</span>
+            
+                {% for bookmark in bookmarksWithCategory %}
+                    <h3 class="text-indigo-500 text-lg md:text-xl font-semibold">
+                        <a href="{{bookmark.url}}" title="{{bookmark.url_title}}">{{ bookmark.name }}</a>
+                    </h3>
+                    <p class="text-gray-500 mb-3">{{ bookmark.title }}</p>
+                {% endfor %}
+            </div>
+        {% endfor %}
+      </div>
     </div>
-    {%- endfor -%}
-</ul>
+  </div>

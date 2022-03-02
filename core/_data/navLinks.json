@@ -1,15 +1,19 @@
 [
     {
-        "text": "Home",
+        "text": "Accueil",
         "url": "/"
-    },
-    {
-        "text": "Favoris",
-        "url": "/bookmarks/"
     },
     {
         "text": "Espagnol",
         "url": "/spanish/"
+    },
+    {
+        "text": "Jeux",
+        "url": "/games/"
+    },
+    {
+        "text": "Parties",
+        "url": "/plays/"
     },
     {
         "text": "Blog",
@@ -18,6 +22,10 @@
     {
         "text": "About",
         "url": "/about-us/"
+    },
+    {
+        "text": "Favoris",
+        "url": "/bookmarks/"
     },
     {
         "text": "Contact",

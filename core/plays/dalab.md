@@ -1,6 +1,8 @@
 ---
 title: Demain, à l'aube
 layout: default
+excerpt: Demain, à l'aube est un jeu où vous incarnez un personnage qui aime sincèrement le confort de son foyer
+cover: ./core/img/avatar-006.jpg
 ---
 
 Demain, à l'aube...

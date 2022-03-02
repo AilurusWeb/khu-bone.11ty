@@ -1,7 +1,11 @@
 [
     {
-        "fr": "Bonjour ! Quoi de neuf ?",
-        "mg": "Manahoana ! Inona no vaovao ?"
+        "fr": "Ça te dis de jouer un petit jeu",
+        "mg": "andao isika hilalao"
+    },
+    {
+        "fr": "merci",
+        "mg": "misaotra"
     },
     {
         "fr": "Au revoir",
@@ -12,11 +16,27 @@
         "mg": "Mandrapihaona"
     },
     {
+        "fr": "nouveau",
+        "mg": "vaovao"
+    },
+    {
+        "fr": "ami",
+        "mg": "namako"
+    },
+    {
         "fr": "Bonjour ! Quoi de neuf ?",
         "mg": "Manahoana ! Inona no vaovao ?"
     },
     {
         "fr": "à bientôt (Jusqu'à ce que nous parlions)",
         "mg": "Mandrapiresaka"
+    },
+    {
+        "fr": "sourire",
+        "mg": "tsiky"
+    },
+    {
+        "fr": "Ne pas",
+        "mg": "tsy"
     }
 ]
