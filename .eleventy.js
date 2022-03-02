@@ -1,8 +1,8 @@
-const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const now = String(Date.now());
 const CleanCSS = require("clean-css");
 const safeLinks = require('@sardine/eleventy-plugin-external-links');
 const Image = require("@11ty/eleventy-img");
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
 
 const root = './core/';
 
@@ -23,6 +23,9 @@ async function imageShortcode(src, alt, cls) {
 }
 
 module.exports = function (eleventyConfig) {
+
+  // Plugins
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
 
   // Layout
   eleventyConfig.addLayoutAlias('default', 'layouts/default.liquid');

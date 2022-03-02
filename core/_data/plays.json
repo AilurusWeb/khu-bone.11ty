@@ -1,0 +1,54 @@
+[
+    {
+        "title": "10 min pour voler le croc d'Apep",
+        "slug": "croc-apep", 
+        "excerpt": "4 Notan 1996, Châtau de Volweign. Ce soir c'est le grand bal.",
+        "cover": "./core/img/avatar-003.jpg",
+        "opinion": "<b>10-min To Be a Dream Thief</b>, est un jeu de rôle qui se joue en <b>10 minutes</b> montre en main. On y incarne un <b>voleur•se onirique</b> avec de redoutables <b>pouvoirs psychiques</b>. Fan de Inception et aimant beaucoup l'univers des jeux Persona, je me devais de tester ce jeu. Et j'ai bien fait car je me suis régalée à vivre cette histoire, si courte sur le papier et dans le temps mais pourtant si riche dans ma tête.",
+        "game": {
+            "creator": "AiToYami",
+            "profile": "https://aitoyami.itch.io/",
+            "title": "10-min To Be a Dream Thief",
+            "page": "https://aitoyami.itch.io/10-min-to-be-a-dream-thief"
+        }
+    },
+    {
+        "title": "Le duc de Hortwald",
+        "slug": "duc-hortwald", 
+        "excerpt": "Si seulement j'avais un fusil et des balles  en argent sur moi",
+        "cover": "./core/img/avatar-003.jpg",
+        "opinion": "Une aventure en 5 minutes, est un jeu de rôle qui se joue en 5 minutes montre en main. Ma première aventure de 5 minutes. Et je dois dire que c'était plutôt cool ! Je ne suis pas sûre qu'on puisse parler d'aventure pour cette histoire, mais j'ai laissé ma créativité s'exprimer et je suis très content de ce que ça donne.",
+        "game": {
+            "creator": "Angela Quidam",
+            "profile": "https://angela-quidam.itch.io/",
+            "title": "Une aventure en 5 minutes",
+            "page": "https://angela-quidam.itch.io/5-min-e"
+        }
+    },
+    {
+        "title": "C'est qui qui crée ? C'est moi !",
+        "slug": "qui-qui-cree", 
+        "excerpt": "Est-ce que je ne pourrai pas y mettre un peu de folie dans cet ordre, une petite pousse de créativité non contrôlée.",
+        "cover": "./core/img/avatar-003.jpg",
+        "opinion": "Cosmogonie en 5 minutes, est un jeu de rôle qui se joue en 5 minutes montre en main. On y incarne une personne confrontée à une secte. Mon 4ème jeu en 5 minutes ! Et là encore je me suis laissée aller totalement. Et franchement, j'ai a-do-ré le lancé de dé final. J'ai tellement souri quand j'ai vu la réponse.",
+        "game": {
+            "creator": "Gaét Hoth",
+            "profile": "https://gaet-hoth.itch.io/",
+            "title": "Cosmogonie en 5 minutes",
+            "page": "https://gaet-hoth.itch.io/cosmogonie-en-5-minutes"
+        }
+    },
+    {
+        "title": "Un fils cultiste de l'Ancien",
+        "slug": "fils-cultiste", 
+        "excerpt": "Est-ce que je ne pourrai pas y mettre un peu de folie dans cet ordre, une petite pousse de créativité non contrôlée.",
+        "cover": "./core/img/avatar-003.jpg",
+        "opinion": "5min avec une secte, est un jeu de rôle qui se joue en 5 minutes montre en main. On y incarne une personne confrontée à une secte. Mon troisième essai sur les jeux de rôle en 5 minutes. Et il n'y a pas a dire j'adore toujours autant. C'est agréable de prendre 5 minutes par jour juste pour écrire un peu ! :) 5 min avec un secte est le jeu avec lequel j'ai eu le moins de difficulté à me lancer.",
+        "game": {
+            "creator": "Herisson",
+            "profile": "https://herisson.itch.io/",
+            "title": "5min avec une secte",
+            "page": "https://herisson.itch.io/5min-avec-une-secte"
+        }
+    }
+]
