@@ -4,8 +4,8 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "githubbuild": "npx eleventy && npx tailwindcss -i ./core/styles/default.css -o ../www/styles/default.css",
-    "css": "npx tailwindcss -i ./core/styles/default.css -o ../www/styles/default.css --watch",
+    "githubbuild": "npx eleventy && npx tailwindcss -i ./core/styles/default.css -o ./_site/styles/default.css",
+    "css": "npx tailwindcss -i ./core/styles/default.css -o ./_site/styles/default.css --watch",
     "serve": "eleventy --serve"
   },
   "keywords": [],
