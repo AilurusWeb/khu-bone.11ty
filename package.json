@@ -4,7 +4,7 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "build": "eleventy & postcss core/styles/default.css --o ../www/styles/default.css",
+    "githubbuild": "npx eleventy && npx tailwindcss -i ./core/styles/default.css -o ../www/styles/default.css",
     "css": "npx tailwindcss -i ./core/styles/default.css -o ../www/styles/default.css --watch",
     "serve": "eleventy --serve"
   },

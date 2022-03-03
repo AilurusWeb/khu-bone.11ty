@@ -22,6 +22,17 @@
         }
 	},
 	{
+		"name": "Kaomoji",
+        "title": "Liste d'emoji en ASCII",
+        "description": "",
+        "url": "https://wprock.fr/t/kaomoji",
+        "url_title": "Accéder à la liste de Kaomoji",
+        "category": {
+            "title": "smiley",
+            "slug": "smiley"
+        }
+	},
+	{
 		"name": "CSS Stats",
         "title": "Analyseur du CSS",
         "description": "",
