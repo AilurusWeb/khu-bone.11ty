@@ -12,10 +12,9 @@
         min-height: 100vh;
     }
 
-
     /* navbar */
     .c-navbar {
-        @apply hidden justify-between items-center w-full md:flex md:w-auto md:order-1;
+        @apply justify-between items-center w-full md:flex md:w-auto md:order-1;
     }
     .c-navbar-inner {
         @apply flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium;

@@ -68,6 +68,7 @@ css: /styles/default.css
     var navbar = document.getElementById('navbar');
     var navbarBtn = document.getElementById('navbar_button');
     navbarBtn.addEventListener('click', function (event) {
+      console.log(app.navOpened)
       if (!app.navOpened) {
         app.navOpened = true;
         navbar.classList.remove('hidden');
