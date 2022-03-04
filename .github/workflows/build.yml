@@ -22,3 +22,9 @@ jobs:
         run: npm install
       - name: Build Eleventy
         run: npm run build --if-present
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
