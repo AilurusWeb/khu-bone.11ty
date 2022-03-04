@@ -81,6 +81,7 @@ module.exports = function (eleventyConfig) {
 
   // Run
   return {
+    pathPrefix: "/",
     dir: {
       input: "core",
       output: "_site"
