@@ -1,30 +1,27 @@
-name: GitHub Pages
+name: Eleventy Build
 
 on:
   push:
     branches:
-      - main  # Set a branch name to trigger deployment
-  pull_request:
-
+      - master
+      
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Install dependencies
-        run: npm install
-      - name: Build Eleventy
-        run: npm run build --if-present
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+
+      - run: npm ci
+
+      - run: npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
         with:
-          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./_site
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./dist
