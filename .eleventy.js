@@ -39,7 +39,7 @@ module.exports = function (eleventyConfig) {
       return collectionApi.getFilteredByGlob(root + "plays/*.md");
   });
 
-  // Custom helpers
+  // Custom helper
   eleventyConfig.addFilter("uniq_slug", function(array) {
     return array.filter((v,i,a)=>a.findIndex(t=>(t.slug===v.slug))===i)
   });
