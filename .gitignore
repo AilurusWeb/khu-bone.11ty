@@ -2,3 +2,5 @@ node_modules
 _tmp/
 .DS_Store
 _site/
+photos/
+photos/**/*
