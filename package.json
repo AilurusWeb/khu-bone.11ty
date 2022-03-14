@@ -1,27 +1,23 @@
 {
-  "name": "khu-bone.fr",
+  "name": "khu-build",
   "version": "1.0.0",
   "description": "",
-  "main": ".eleventy.js",
+  "main": "index.js",
   "scripts": {
-    "build": "npx eleventy && npx tailwindcss -i ./core/styles/default.css -o ./_site/styles/default.css",
-    "css": "npx tailwindcss -i ./core/styles/default.css -o ./_site/styles/default.css --watch",
-    "serve": "eleventy --serve"
+    "dev": "eleventy --serve",
+    "css": "npx tailwindcss -i ./src/styles/main.css -o ./_site/styles/main.css --watch",
+    "build": "npx eleventy && npx tailwindcss -i ./src/styles/main.css -o ./_site/styles/main.css --minify"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Khü Bone",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "@11ty/eleventy-img": "^1.1.0",
-    "@ltd/j-toml": "^1.29.0",
     "autoprefixer": "^10.4.2",
-    "clean-css": "^5.2.4",
-    "clean-css-cli": "^5.5.2",
+    "eleventy-plugin-prismic": "^0.2.1",
     "postcss-cli": "^9.1.0",
     "tailwindcss": "^3.0.23"
   },
   "dependencies": {
-    "@sardine/eleventy-plugin-external-links": "^1.4.0"
+    "@11ty/eleventy-fetch": "^3.0.0"
   }
 }

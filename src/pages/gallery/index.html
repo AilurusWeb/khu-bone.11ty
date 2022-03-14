@@ -1,0 +1,14 @@
+---
+layout: default
+permalink: "gallery/index.html"
+---
+{% liquid
+    assign d = prismic.gallery[0].data
+    
+    assign title = d.title[0]
+    assign source = d.source[0].text
+%}
+
+<h1>{{ title.text }}</h1>
+
+<p>Source : {{ source }}</p>
