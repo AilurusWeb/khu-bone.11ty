@@ -3,12 +3,26 @@ layout: default
 permalink: "gallery/index.html"
 ---
 {% liquid
-    assign d = prismic.gallery[0].data
+    assign _gallery = prismic.gallery[0].data
+    assign title = _gallery.title[0]
+    assign source = _gallery.source[0].text
+
+    assign _photosgroup = prismic.photos[0].data
     
-    assign title = d.title[0]
-    assign source = d.source[0].text
+    assign photosUid = _photosgroup.album | map: "photo.uid"
+    assign _photos = prismic.photo | in_uids: photosUid
 %}
 
 <h1>{{ title.text }}</h1>
 
 <p>Source : {{ source }}</p>
+
+<div class="gallery grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6 xl:gap-8 mb-4 md:mb-8">
+    {% for photo in _photos %}
+        {% assign url = source | append: photo.data.filename[0].text %}
+        <div class="">
+            {{ photo.data.category }}
+            <img class="w-42 h-42" src="{{url}}" alt="">
+        </div>
+    {% endfor %}
+</div>
