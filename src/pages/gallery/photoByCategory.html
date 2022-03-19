@@ -1,33 +1,35 @@
 ---
 layout: default
 pagination:
-    data: prismic.photos
+    data: albums.data.category
     size: 1
     alias: category
-permalink: "gallery/{{ category.uid }}/"
-photos_url: "https://khu-bone.fr/photos/"
+permalink: "gallery/{{ category.slug }}/"
 ---
-{% assign photos = category.data.album | map: "photo.id" %}
+
+{% assign album = albums.data.album %}
+{% assign origin = album.origin %}
+
 <div class="bg-white py-6 sm:py-8 lg:py-12">
     <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-        <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-8 md:mb-12">{{ category.data.title[0].text }}</h2>
+        <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-8 md:mb-12">{{ category.title }}</h2>
         <section class="text-gray-600 body-font">
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-wrap -m-4">
-                    {% for photo_id in photos %}
-                    {% assign photo = prismic.photo | where: "id", photo_id %}
-                    {% assign src = photos_url | append: photo[0].data.filename[0].text %}
-                    {% assign title = photo[0].data.title[0].text %}
-                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                        <a class="block relative h-48 rounded overflow-hidden" href="{{src}}" target="_blank">
-                            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="{{src}}">
-                        </a>
-                        <div class="mt-4">
-                            <h2 class="text-gray-900 title-font text-lg font-medium">
-                                <a href="{{src}}" target="_blank">{{ title }}</a>
-                            </h2>
+                    {% for photo in category.photos %}
+                        {% assign img_url = origin | append: category.path | append: photo.filename %}
+                    
+                        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                            <a class="block relative h-48 rounded overflow-hidden" href="{{ img_url }}" target="_blank">
+                                <img alt="" class="object-cover object-center w-full h-full block" src="{{img_url}}">
+                            </a>
+                            <div class="mt-4">
+                                <h2 class="text-gray-900 title-font text-lg font-medium">
+                                    <a href="{{img_url}}" target="_blank">{{ photo.title }}</a>
+                                </h2>
+                            </div>
                         </div>
-                    </div>
+
                     {% endfor %}
                 </div>
             </div>

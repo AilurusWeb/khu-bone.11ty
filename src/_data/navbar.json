@@ -8,10 +8,5 @@
         "text": "Photos",
         "slug": "/gallery",
         "title": "Accéder à mes photos"
-    },
-    {
-        "text": "Contact",
-        "slug": "/contact",
-        "title": "Accéder à la page pour me contacter"
     }
 ]

@@ -1,0 +1,86 @@
+[album]
+origin = "https://khu-bone.fr/photos/"
+
+[[category]]
+title = "montagnes"
+slug= "mountains"
+path= ""
+
+    [[category.photos]]
+    title = ""
+    location = ""
+    filename = "jardin_001.jpg"
+    alt = ""
+    
+    [[category.photos]]
+    title = ""
+    location = ""
+    filename = "montagne_001.jpg"
+    alt = ""
+    
+    [[category.photos]]
+    title = ""
+    location = ""
+    filename = "montagne_002.jpg"
+    alt = ""
+    
+    [[category.photos]]
+    title = ""
+    location = ""
+    filename = "montagne_003.jpg"
+    alt = ""
+    
+    [[category.photos]]
+    title = ""
+    location = ""
+    filename = "montagne_004.jpg"
+    alt = ""
+    
+    [[category.photos]]
+    title = ""
+    location = ""
+    filename = "pont-suspendu_001.jpg"
+    alt = ""
+    
+    [[category.photos]]
+    title = ""
+    location = ""
+    filename = "pont_001.jpg"
+    alt = ""
+
+[[category]]
+title = "châteaux"
+slug= "kingdoms"
+path= ""
+    
+    [[category.photos]]
+    title = ""
+    location = ""
+    filename = "ruine-st-odile.jpg"
+    alt = ""
+    
+    [[category.photos]]
+    title = ""
+    location = ""
+    filename = "spesbourg-door.jpg"
+    alt = ""
+
+[[category]]
+title = "jardins"
+slug= "gardens"
+path= ""
+
+[[category]]
+title = "zélie"
+slug= "zelie"
+path= ""
+    
+    [[category.photos]]
+    title = ""
+    location = ""
+    filename = "zelie_002.jpg"
+    alt = ""
+
+
+
+

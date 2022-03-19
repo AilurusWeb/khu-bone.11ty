@@ -3,6 +3,33 @@ layout: default
 title: Home
 ---
 
-Mon super site
+<div class="bg-white py-6 sm:py-8 lg:py-12">
+    <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+      <!-- text - start -->
+      <div class="mb-10 md:mb-16">
+        <h1 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">Super site en construction !</h1>
+  
+        <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">Je me lance enfin dans la création de mon site avec une véritable envie de partage. Je vais donc prendre plus de photos pour vous faire voyagez. Inventer plus de jeux pour vous amusez. Écrire plus de texte pour vous inspirez. Et surtout, je vais m'amuser avec ce site et partager plus activement mes petits moments de bonheur.</p>
+      </div>
+      <!-- text - end -->
 
-Page : {{ title }}
+      <h2 class="text-gray-800 text-xl lg:text-2xl font-bold text-center mb-4 md:mb-6">En attendant, amusez-vous avec ces petits liens :D</h2>
+  
+      <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-8 sm:gap-y-10">
+          
+        {% for link in bookmarks.data.links %}
+            <div class="bg-gray-100 rounded-lg relative p-5 pt-8">
+                <h3 class="text-indigo-500 text-lg md:text-xl font-semibold mb-3">{{link.name}}</h3>
+                <p class="text-gray-600 mb-3">{{link.text}}</p>
+                <div>
+                    <a type="button" href="{{link.href}}" title="{{link.title}}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                        Jeter un oeil à&nbsp;<strong>{{link.name}}</strong>
+                        <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
